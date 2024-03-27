@@ -1,0 +1,96 @@
+
+
+.titulo-h2-index {
+    background-color: #293241;
+    color: #E0FBFC;
+    font-family: "Roboto Flex", sans-serif; 
+    font-weight: normal;
+}
+
+.titulo-h2-index-p {
+    background-color: #E0FBFC;
+    color:#293241;
+    font-family: "Roboto Flex", sans-serif;
+
+}
+
+.main-section-index {
+    text-align: center;
+    background-color: black;
+    color: #E0FBFC;
+}
+
+.main-section-index p {
+    text-align: right;
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: lighter;
+    font-size: small;
+    font-style: italic;
+}
+
+
+
+.navbar {
+    color: #293241 ;
+    background-color: #EE6C4D;
+    font-style: normal;
+}
+
+.navbar-list {
+    list-style-type: none;
+    font-size: 1.5rem;
+    color: #293241;
+}
+
+.navbar-list li {
+    display: inline;
+}
+.navbar-list li a {
+    text-decoration: none;
+    color:#293241;
+    cursor: pointer;
+}
+
+.navbar-list li a:hover{
+    color: #E0FBFC;
+}
+
+.header-index {
+    position:sticky;
+    top: 15px;
+    display: flex;
+    background-color: #98C1D9;
+    color: #293241;
+    font-style: italic;
+    font-weight: lighter;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    flex-wrap: wrap;
+}
+
+header a img{
+    width: 3rem;
+}
+
+.section-tres-calculadoras{
+    display: flex;
+    gap: 1%;
+}
+
+.articulo-calculadoras-index {
+    color: #293241;
+    background-color: #E0FBFC ;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-size: 1rem;
+    justify-content: center;
+}
+
+.imagen-calculadoras-index {
+    width: 25rem;
+
+    
+}
+
+
+.footer-img {
+    width: 1rem;
+}

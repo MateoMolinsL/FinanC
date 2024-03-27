@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <!--con lo de aquí abajo estoy enlazando el documento html con el documento css-->
+     <!--con lo de aquí abajo estoy enlazando el documento html con el documento css-->
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+  crossorigin="anonymous"
+/>
+<!--con lo de aquí abajo estoy enlazando el documento html con el documento css-->
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!--conectando bootstrap-->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"
+></script>
+
+<header class="header-index">
+  <!--Esta parte es lo que sería la barra de navegación clásica en la parte de arriba?-->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a href="../index.html">
+        <img src="../images/logo/logo.png" alt="Logo de calcusmart" />
+      </a>
+      <a class="navbar-brand" href="../index.html">FinanC</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="teoria.html"
+              >Teoria</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Calculadoras
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="calculadora-interes-compuesto.html"
+                  >Calculadora de interes compuesto</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="calculadora-prestamos.html"
+                  >Calculadora de préstamos</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="calculadora-proyectos-inversion.html"
+                  >Calculadora de proyectos de inversión</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+    <h1>Contactá con nosotros</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+      voluptate esse illum! Neque, praesentium. Perspiciatis, eligendi tempore.
+      Illo ab quam obcaecati dolor. Provident explicabo odit consequuntur qui
+      aperiam. Cum, odio.
+    </p>
+    <section id="contacto">
+      <p>
+        ¡Nos encantaría saber de ti! Ponte en contacto con nosotros para
+        cualquier consulta, comentario o sugerencia.
+      </p>
+      <form action="enviar.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+    <footer>
+      <p>
+        © 2024 FinanC. Todos los derechos reservados. Desarrollado por Mateo
+        Molíns Larrabure.
+      </p>
+      <h4>Seguinos en:</h4>
+      <a href="https://www.facebook.com/">
+        <img
+          class="footer-img"
+          src="../images/footer/facebook-logo.png"
+          alt="Redirección a Facebook"
+        />
+      </a>
+      <a href="https://www.instagram.com">
+        <img
+          class="footer-img"
+          src="../images/footer/instagram.png"
+          alt="Redirección a instagram"
+        />
+      </a>
+      <a href="https://twitter.com/">
+        <img
+          class="footer-img"
+          src="../images/footer/twitter-logo-logo.png"
+          alt="Redirección a twitter"
+        />
+      </a>
+    </footer>
+  </body>
+</html>

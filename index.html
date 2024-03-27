@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- El tittle es el que sale en la pestaña
+       -->
+
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>FinanC</title>
+    <!--Aqui estoy conectando bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!--con lo de aquí abajo estoy enlazando el documento html con el documento css-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--conectando bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <header class="header-index">
+      <!--Esta parte es lo que sería la barra de navegación clásica en la parte de arriba?-->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a href="index.html">
+            <img src="images/logo/logo.png" alt="Logo de calcusmart" />
+          </a>
+          <a class="navbar-brand" href="index.html">FinanC</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="pages/teoria.html"
+                  >Teoria</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Calculadoras
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="pages/calculadora-interes-compuesto.html"
+                      >Calculadora de interes compuesto</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="pages/calculadora-prestamos.html"
+                      >Calculadora de préstamos</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="pages/calculadora-proyectos-inversion.html"
+                      >Calculadora de proyectos de inversión</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--Esta parte sería donde iria la calculadora, la herramienta pero aún nose como desarrollarla bien. Quisiera que se pueda segmentar por fechas, región y productos generales. Además, que se pueda introducir un valor en $ y lo vaya "transformando" en los diferentes periodos que se quieran-->
+    <main class="main-section-index">
+      <h1>Calcula inflación, préstamos, inversiones y más</h1>
+      <h2 class="titulo-h2-index">Calculadora de inflación</h2>
+      <p class="titulo-h2-index-p">
+        La inflación representa el incremento generalizado y sostenido de los
+        precios de bienes y servicios en el mercado durante un período
+        específico. Cuando los precios aumentan en general, el poder adquisitivo
+        de la moneda disminuye, lo que significa que con cada unidad de moneda
+        se puede comprar menos bienes y servicios. Nuestra herramienta de
+        calculadora de inflación te permite analizar y calcular la inflación en
+        función de diferentes categorías. Puedes segmentar los datos según
+        distintas zonas geográficas del país o enfocarte en categorías
+        específicas de productos o servicios. Esta funcionalidad te brinda una
+        comprensión más detallada de cómo la inflación afecta a diferentes áreas
+        o sectores, permitiéndote tomar decisiones financieras más informadas.
+      </p>
+      <section class="container-calculadora-principal">
+        <h3 class="item-grid-h3-calculadora-principal">
+          Calculadora herramienta
+        </h3>
+        <!-- que diga herramienta es una referencia para mi ahora-->
+
+        <ul class="item-grid-ul-calculadora-principal">
+          <li>Periodo 1</li>
+          <!--En este lugar se elegiría el año y mes inicial-->
+          <li>Periodo 2</li>
+          <!--En este lugar se elegiría el año y mes final-->
+          <li>Zona</li>
+          <!--En este lugar se elegiría, si es que se quiere, un filtro por región-->
+          <li>Articulo</li>
+          <!--En este lugar se elegiría, si es que se quiere, un filtro por artículo-->
+        </ul>
+        <div class="item-grid-p-calculadora-principal">
+          <p>
+            Durante el periodo comprendido entre [fecha inicial] y [fecha
+            final], la tasa de inflación fue del [porcentaje]% según nuestros
+            cálculos. Esto significa que el costo de vida y el precio de bienes
+            y servicios aumentaron en promedio un [porcentaje]% durante este
+            tiempo.
+          </p>
+        </div>
+      </section>
+
+      <!--aquí va otra section donde aparecen las otras 3 calculadoras, son links que redireccionan dentro del mismo proyecto a cada herramienta en particular-->
+
+      <section class="container-grid-tres-calculadoras">
+        <!--class="section-tres-calculadoras"-->
+
+        <div class="item-grid-div-calculadoras-index">
+          <!--a donde me conviene poner el href? en la imagen? en el título? en el parrafo? cual es mejor práctica? yo lo voy a poner por ahora en la img que es lo más grande y donde mas facil es colocar el mouse-->
+          <h3>Calculadora de interes compuesto</h3>
+          <div>
+            <a href="pages/calculadora-interes-compuesto.html">
+              <!--esta es la redirección a la pagina dentro del doc donde está esa calculadora-->
+              <div>
+                <img
+                  class="item-grid-div-img-tres-calculadoras"
+                  src="images/calculadoras/calc-interes-compuesto.jpg"
+                  alt="Calculadora interes compuesto"
+                />
+              </div>
+            </a>
+          </div>
+          <p>
+            Esta es una calculadora para calcular el interes compuesto. Podrás
+            realizar proyecciones en base a capital inicial, diferentes tasas de
+            interés y montos periodicos de agregación de capital.
+          </p>
+        </div>
+
+        <!--ESTA ES LA CALCULADORA DE PRESTAMOS, EN REALIDAD LA REDIRECCIÓN-->
+        <div class="item-grid-div-calculadoras-index">
+          <!--a donde me conviene poner el href? en la imagen? en el título? en el parrafo? cual es mejor práctica? yo lo voy a poner por ahora en la img que es lo más grande y donde mas facil es colocar el mouse-->
+          <h3>Calculadora de prestamos</h3>
+          <div>
+            <a href="pages/calculadora-prestamos.html">
+              <!--esta es la redirección a la pagina dentro del doc donde está esa calculadora-->
+              <div>
+                <img
+                  class="item-grid-div-img-tres-calculadoras"
+                  src="images/calculadoras/calc-prestamos.jpg"
+                  alt="Calculadora de préstamos"
+                />
+              </div>
+            </a>
+          </div>
+          <p>
+            Esta es una calculadora para calcular préstamos. Podrás realizar
+            simulaciones en base al capital a solicitar, la cantidad de meses a
+            devolver el mismo, devengación de interes y capital entre otros.
+          </p>
+        </div>
+
+        <!--ESTA ES LA CALCULADORA DE PROYECTOS DE INVERSIÓN, EN REALIDAD LA REDIRECCIÓN-->
+        <div class="item-grid-div-calculadoras-index">
+          <!--a donde me conviene poner el href? en la imagen? en el título? en el parrafo? cual es mejor práctica? yo lo voy a poner por ahora en la img que es lo más grande y donde mas facil es colocar el mouse-->
+          <h3>Calculadora de proyectos de inversion</h3>
+          <div>
+            <a href="pages/calculadora-proyectos-inversion.html">
+              <!--esta es la redirección a la pagina dentro del doc donde está esa calculadora-->
+              <div>
+                <img
+                  class="item-grid-div-img-tres-calculadoras"
+                  src="images/calculadoras/calc-proyectos-inversion.jpg"
+                  alt="Calculadora de proyectos de inversion"
+                />
+              </div>
+            </a>
+          </div>
+          <p>
+            Esta es una calculadora para calcular VAN, TIR y otros indicadores
+            de un proyecto de inversión. Podrás realizar proyecciones en base a
+            capital inicial, diferentes tasas de interés y periodos de tiempo.
+          </p>
+        </div>
+      </section>
+    </main>
+    <!--este es el footer. Redirecciona a las redes sociales. Falta agregar un box para contactarse al mail-->
+    <footer class="footer">
+      <p>
+        © 2024 FinanC. Todos los derechos reservados. Desarrollado por Mateo
+        Molíns Larrabure.
+      </p>
+      <div class="footer-div">
+        <h4>Seguinos en:</h4>
+        <div>
+          <a href="https://www.facebook.com/">
+            <img
+              class="footer-img"
+              src="images/footer/facebook-logo.png"
+              alt="Redirección a Facebook"
+            />
+          </a>
+          <a href="https://www.instagram.com">
+            <img
+              class="footer-img"
+              src="images/footer/instagram.png"
+              alt="Redirección a instagram"
+            />
+          </a>
+          <a href="https://twitter.com/">
+            <img
+              class="footer-img"
+              src="images/footer/twitter-logo-logo.png"
+              alt="Redirección a twitter"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- El tittle es el que sale en la pestaña
+       -->
+
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>FinanC</title>
+
+    <!--con lo de aquí abajo estoy enlazando el documento html con el documento css-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header-index">
+      <a href="index.html">
+        <img src="images/logo/logo.png" alt="Logo de calcusmart" />
+      </a>
+
+      <!--Esta parte es lo que sería la barra de navegación clásica en la parte de arriba?-->
+      <!--tengo que terminar de armar las carpetas para las referencias de los headers-->
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="pages/calculadoras.html">Calculadoras</a></li> <!--Aqui no tiene nada porque mi idea es redirigir directamente a cada calculadora desde un submenú en el nav, nose como hacerlo aún-->
+            <!--esta en realidad es una lista en la cual pretendo que tenga vinculos a las otras 3 calculadoras, sin que se abra un html. Es decir una sublista en la cual redireccione diretamente a la calculadora seleccionada-->
+            <li><a href="pages/teoria.html">Teoría</a></li>
+            <li><a href="pages/blog.html">Blog</a></li>
+            <li><a href="pages/contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <!--Esta parte sería donde iria la calculadora, la herramienta pero aún nose como desarrollarla bien. Quisiera que se pueda segmentar por fechas, región y productos generales. Además, que se pueda introducir un valor en $ y lo vaya "transformando" en los diferentes periodos que se quieran-->
+      <h1>Calcula inflación, préstamos, inversiones y más</h1>
+      <h2 class="titulo-h2-index">Calculadora de inflación</h2>
+      <p class="titulo-h2-index-p">
+        La inflación representa el incremento generalizado y sostenido de los
+        precios de bienes y servicios en el mercado durante un período
+        específico. Cuando los precios aumentan en general, el poder adquisitivo
+        de la moneda disminuye, lo que significa que con cada unidad de moneda
+        se puede comprar menos bienes y servicios. Nuestra herramienta de
+        calculadora de inflación te permite analizar y calcular la inflación en
+        función de diferentes categorías. Puedes segmentar los datos según
+        distintas zonas geográficas del país o enfocarte en categorías
+        específicas de productos o servicios. Esta funcionalidad te brinda una
+        comprensión más detallada de cómo la inflación afecta a diferentes áreas
+        o sectores, permitiéndote tomar decisiones financieras más informadas.
+      </p>
+      <section class="main-section-index">
+        <h3>Calculadora herramienta</h3>
+        <!-- que diga herramienta es una referencia para mi ahora-->
+
+        <ul>
+          <li>Periodo 1</li>
+          <!--En este lugar se elegiría el año y mes inicial-->
+          <li>Periodo 2</li>
+          <!--En este lugar se elegiría el año y mes final-->
+          <li>Zona</li>
+          <!--En este lugar se elegiría, si es que se quiere, un filtro por región-->
+          <li>Articulo</li>
+          <!--En este lugar se elegiría, si es que se quiere, un filtro por artículo-->
+        </ul>
+        <p>
+          Durante el periodo comprendido entre [fecha inicial] y [fecha final],
+          la tasa de inflación fue del [porcentaje]% según nuestros cálculos.
+          Esto significa que el costo de vida y el precio de bienes y servicios
+          aumentaron en promedio un [porcentaje]% durante este tiempo.
+        </p>
+      </section>
+
+      <!--aquí va otra section donde aparecen las otras 3 calculadoras, son links que redireccionan dentro del mismo proyecto a cada herramienta en particular-->
+      <section>
+        <article class="articulo-calculadoras-index">
+          <!--a donde me conviene poner el href? en la imagen? en el título? en el parrafo? cual es mejor práctica? yo lo voy a poner por ahora en la img que es lo más grande y donde mas facil es colocar el mouse-->
+          <h3>Calculadora de interes compuesto</h3>
+          <a href="pages/calculadora-interes-compuesto.html">
+            <!--esta es la redirección a la pagina dentro del doc donde está esa calculadora-->
+            <img
+              class="imagen-calculadoras-index"
+              src="images/calculadoras/calc-interes-compuesto.jpg"
+              alt="Calculadora interes compuesto"
+            />
+          </a>
+          <p>
+            Esta es una calculadora para calcular el interes compuesto. Podrás
+            realizar proyecciones en base a capital inicial, diferentes tasas de
+            interés y montos periodicos de agregación de capital.
+          </p>
+        </article>
+
+        <!--ESTA ES LA CALCULADORA DE PRESTAMOS, EN REALIDAD LA REDIRECCIÓN-->
+        <article class="articulo-calculadoras-index">
+          <!--a donde me conviene poner el href? en la imagen? en el título? en el parrafo? cual es mejor práctica? yo lo voy a poner por ahora en la img que es lo más grande y donde mas facil es colocar el mouse-->
+          <h3>Calculadora de prestamos</h3>
+          <a href="pages/calculadora-prestamos.html">
+            <!--esta es la redirección a la pagina dentro del doc donde está esa calculadora-->
+            <img
+              class="imagen-calculadoras-index"
+              src="images/calculadoras/calc-prestamos.jpg"
+              alt="Calculadora de préstamos"
+            />
+          </a>
+          <p>
+            Esta es una calculadora para calcular préstamos. Podrás realizar
+            simulaciones en base al capital a solicitar, la cantidad de meses a
+            devolver el mismo, devengación de interes y capital entre otros.
+          </p>
+        </article>
+
+        <!--ESTA ES LA CALCULADORA DE PROYECTOS DE INVERSIÓN, EN REALIDAD LA REDIRECCIÓN-->
+        <article class="articulo-calculadoras-index">
+          <!--a donde me conviene poner el href? en la imagen? en el título? en el parrafo? cual es mejor práctica? yo lo voy a poner por ahora en la img que es lo más grande y donde mas facil es colocar el mouse-->
+          <h3>Calculadora de proyectos de inversion</h3>
+          <a href="pages/calculadora-proyectos-inversion.html">
+            <!--esta es la redirección a la pagina dentro del doc donde está esa calculadora-->
+            <img
+              class="articulo-calculadoras-index"
+              src="images/calculadoras/calc-proyectos-inversion.jpg"
+              alt="Calculadora de proyectos de inversion"
+            />
+          </a>
+          <p>
+            Esta es una calculadora para calcular VAN, TIR y otros indicadores
+            de un proyecto de inversión. Podrás realizar proyecciones en base a
+            capital inicial, diferentes tasas de interés y periodos de tiempo.
+          </p>
+        </article>
+      </section>
+    </main>
+    <!--este es el footer. Redirecciona a las redes sociales. Falta agregar un box para contactarse al mail-->
+    <footer>
+      <p>
+        © 2024 FinanC. Todos los derechos reservados. Desarrollado por Mateo
+        Molíns Larrabure.
+      </p>
+      <h4>Seguinos en:</h4>
+      <a href="https://www.facebook.com/">
+        <img
+          class="footer-img"
+          src="images/footer/facebook-logo.png"
+          alt="Redirección a Facebook"
+        />
+      </a>
+      <a href="https://www.instagram.com">
+        <img
+          class="footer-img"
+          src="images/footer/instagram.png"
+          alt="Redirección a instagram"
+        />
+      </a>
+      <a href="https://twitter.com/">
+        <img
+          class="footer-img"
+          src="images/footer/twitter-logo-logo.png"
+          alt="Redirección a twitter"
+        />
+      </a>
+    </footer>
+  </body>
+</html>

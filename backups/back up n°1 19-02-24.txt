@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- El tittle es el que sale en la pestaña
+       -->
+    <title>Calculadora de inflacion</title>
+
+    <!--con lo de aquí abajo estoy enlazando el documento html con el documento css-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de inflación Argentina</h1>
+        
+        <!--Esta parte es lo que sería la barra de navegación clásica en la parte de arriba?-->
+        <!--tengo que terminar de armar las carpetas para las referencias de los headers-->
+        <nav>
+            <ul>
+                <li><a href="Inicio.html">Inicio</a></li> <!--aqui quiero el logo del proyecto-->
+                <li><a href="calculadora.html">Calculadoras</a></li>
+                <li><a href="teoria.html">Teoría</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <p>
+        <h2>Que es la inflación?</h2>
+            La inflación,  es el aumento generalizado y sostenido de los precios de los bienes y servicios existentes en el mercado durante un determinado período de tiempo. Cuando el nivel general de precios sube, con cada unidad de moneda se adquieren menos bienes y servicios.
+    </p>
+    <!--Esta parte sería donde iria la calculadora, la herramienta pero aún nose como desarrollarla bien. Quisiera que se pueda segmentar por fechas, región y productos generales. Además, que se pueda introducir un valor en $ y lo vaya "transformando" en los diferentes periodos que se quieran-->
+    <section>
+        <h3>Calculadora herramienta</h3> <!-- que diga herramienta es una referencia para mi ahora-->
+            <ul>
+                <li>Periodo 1</li> <!--En este lugar se elegiría el año y mes inicial-->
+                <li>Periodo 2</li> <!--En este lugar se elegiría el año y mes final-->
+                <li>Zona</li> <!--En este lugar se elegiría, si es que se quiere, un filtro por región-->
+                <li>Articulo</li><!--En este lugar se elegiría, si es que se quiere, un filtro por artículo-->
+            </ul>
+    </section>
+    <footer>
+        <h4>
+            Seguinos en:
+        </h4>
+        <a href="https://www.facebook.com/">
+            <img src="images/footer/facebook-logo.png" alt="Redirección a Facebook">
+        </a>
+        <a href="https://www.instagram.com">
+            <img src="images/footer/instagram.png" alt="Redirección a instagram">
+        </a>
+        <a href="https://twitter.com/">
+            <img src="images/footer/twitter-logo-logo.png" alt="Redirección a twitter">
+        </a>
+        
+    </footer>
+</body>
+</html>
