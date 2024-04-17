@@ -1,0 +1,15 @@
+@mixin parrafo-main{
+    font-family: "Roboto Flex", sans-serif;
+    color: $color-thirdy;
+    font-weight: normal;
+    padding: 10px;
+}
+
+//mixin para la calculadora principal
+@mixin grid-calculadora-principal{
+    display: grid;
+    grid-column: 1/3;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}

@@ -1,0 +1,198 @@
+//importando archivos secundarios
+@import "utilities/variables";
+@import "utilities/mixin";
+@import "utilities/mediaquery";
+
+h1{
+    color: $color-principal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-index{
+    display: inline;
+}
+
+.navbar{
+    color: $color-secondary;
+    background-color: $color-principal;
+    font-style: normal;
+    align-items: center;
+    padding: 10px;
+    .a:hover{
+        color: $color-thirdy;
+    }
+}
+
+.dropdown-menu a:hover{
+    color: $color-principal;
+}
+
+header{
+    a{
+        img{
+            width: 30px;
+        }
+    }
+}
+
+//MAIN ESTILO MOBILE;INCLUYE TODO MENOS EL FOOTER
+main{
+    h1{
+        color: $color-thirdy;
+        font-family:"Roboto Flex", sans-serif;
+        font-weight: normal;
+        text-align: start;
+        width: fit-content;
+    }
+}
+
+.main-section-index{
+    background-color: black;
+    @include parrafo-main;
+    padding: 20px;
+    p{  text-align: justify;
+        font-family: "Roboto Flex", sans-serif;
+        font-weight: lighter;
+        font-size: small;
+        font-style: italic;
+        margin-top: 10px;
+
+    }
+}
+
+.titulo-h2-index{
+    background-color: $color-secondary;
+    @include parrafo-main;
+ 
+}
+
+.titulo-h2-index-p{
+    background-color: $color-thirdy;
+    color: $color-secondary;
+    font-family: "Roboto Flex", sans-serif;
+    padding: 10px;
+}
+
+//CALCULADORA PRINCIPAL ESTILO MOBILE
+
+.container-calculadora-principal{
+height: 50vh;
+background-color: $color-secondary;
+display: grid;
+column-gap: 5px;
+row-gap: 5px;
+padding: 0;
+margin: 0;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 10% 50% 40%;
+}
+
+.item-grid-h3-calculadora-principal{
+    @include grid-calculadora-principal;
+}
+
+.item-grid-ul-calculadora-principal{
+    @include grid-calculadora-principal;
+    padding: 5px;
+    margin: 5px;
+}
+
+.item-grid-p-calculadora-principal{
+    @include grid-calculadora-principal;
+    margin: 5px;
+}
+
+.item-grid-p-calculadora-principal{
+    p{
+        align-self: auto;
+        box-sizing: content-box;
+        justify-content:center;
+        text-align: justify;
+        padding: 0;
+        margin: 0;
+        height: 90%;
+    }
+}
+
+//CALCULADORAS SECUNDARIAS ESTILO MOBILE
+
+.container-grid-tres-calculadoras{
+    display: grid;
+    grid-template-rows:repeat(3 1fr) ;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 5px;
+    column-gap: 5px;
+    margin-top: 20px;
+  }
+
+ .item-grid-div-calculadoras-index{
+    display: grid;
+    grid-column: 1/4;
+    color: #293241;
+    background-color: #e0fbfc;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    div{
+        width: 200px;
+        height: 200px;
+        align-self: center;
+        justify-self: center;
+    }
+
+    p{
+        text-align: center;
+        position: relative;
+        bottom: 0;
+    }
+ } 
+
+ .item-grid-div-img-tres-calculadoras{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+ }
+
+
+ //FOOTER
+ footer{
+    gap: 10%;
+    display: flex;
+    padding: 20px;
+    background-color: black;
+    color: antiquewhite;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    margin: 0;
+    p{
+        margin: 0;
+    }
+ }
+.footer-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: center;
+
+    div{
+        display: inline-flex;
+        justify-self: center;
+    }
+}
+
+.footer-img{
+    display: flex;
+    display:inline-flex;
+    width: 20px;
+}
+

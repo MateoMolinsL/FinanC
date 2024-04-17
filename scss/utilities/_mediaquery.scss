@@ -1,0 +1,145 @@
+//MEDIA QUERY PARA TABLET
+@media screen and (min-width: 600px) and (max-width: 990px) {
+
+    .item-grid-ul-calculadora-principal {
+      display: grid;
+      grid-column: 1/2;
+      grid-row: 2/4;
+      align-content: center;
+      justify-content: center;
+      margin: 5px;
+      padding: 0;
+    }
+    
+    .item-grid-p-calculadora-principal {
+      display: grid;
+  
+      grid-column: 2/3;
+      grid-row: 2/4;
+      justify-content:baseline;
+      text-align:justify;
+      align-self: center;
+      margin: 5px;
+    }
+    
+    .item-grid-p-calculadora-principal p{
+      align-self: center;
+      box-sizing: content-box;
+      justify-content: center;
+      align-items: center;
+      text-align:justify;
+      padding: 0;
+      margin:0;
+      height: 90%;
+    }
+  }
+  
+  
+  //MEDIA QUERY PARA PC
+  
+  @media screen and (min-width: 991px) {
+  
+    .item-grid-ul-calculadora-principal {
+      display: grid;
+      grid-column: 1/2;
+      grid-row: 2/4;
+      align-content: center;
+      justify-content: center;
+      margin: 5px;
+      padding: 0;
+    }
+    
+    .item-grid-p-calculadora-principal {
+      display: grid;
+  
+      grid-column: 2/3;
+      grid-row: 2/4;
+      justify-content:baseline;
+      text-align:justify;
+      align-self: center;
+      margin: 5px;
+      
+      p{align-self: center;
+        box-sizing: content-box;
+        justify-content: center;
+        align-items: center;
+        text-align:justify;
+        padding: 0;
+        margin:0;
+        height: 90%;
+      }
+    }
+    
+  
+  //ADAPTANDO PARA PC CALCULADORAS SECUNDARIAS
+  
+    .container-grid-tres-calculadoras{
+      justify-content: space-around;
+    }
+    .item-grid-div-calculadoras-index{
+      display: grid;
+      grid-row: 1/4;
+      justify-content: space-around;
+  
+    }
+    .item-grid-div-calculadoras-index:nth-child(1) {
+      grid-column: 1; // Alinea el primer div en la primera columna 
+    }
+    
+    .item-grid-div-calculadoras-index:nth-child(2) {
+      grid-column: 2; //Alinea el segundo div en la segunda columna 
+    }
+    
+    .item-grid-div-calculadoras-index:nth-child(3) {
+      grid-column: 3; //Alinea el tercer div en la tercera columna 
+    }
+  
+  .main-blog{justify-items: center;
+  
+  }
+  .card:nth-child(1){
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .card:nth-child(2){
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .card:nth-child(3){
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .card:nth-child(4){
+    grid-column: 2;
+    grid-row: 2;
+  }
+    .footer{
+      justify-content: right;
+    }
+    .footer-div{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  
+  
+  //ESTILO PARA EL BLOG
+  .main-blog{
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 4;
+    justify-items: center;
+    column-gap: 5px;
+    row-gap: 5px;
+    margin: 5px;
+  }
+  
+  .card{
+    display: grid;
+    justify-content: center;
+    margin: 5px;
+    grid-column: 1/3;
+  }
+  
