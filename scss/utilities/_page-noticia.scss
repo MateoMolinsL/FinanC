@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  padding: 20px;
+}
+
+#carouselExample {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+.carousel-inner {
+  width: 100%;
+}
+
+.noticia-section {
+  text-align: center;
+}
+
+.noticia-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: $color-secondary;
+}
+
+.noticia-carousel {
+  max-width: 100%;
+  margin: 0 auto;
+
+  .carousel-item img {
+    border-radius: 10px;
+    width: 100% !important;
+    
+    /*--- mobile ---*/
+    @media all and (max-width: 768px) {
+      height: 35vh!important ;
+    }
+
+    /*--- escritorio ---*/
+    @media all and (min-width: 769px) {
+      height: 60vh !important;
+    }
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%;
+  }
+}

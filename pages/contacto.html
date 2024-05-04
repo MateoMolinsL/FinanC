@@ -98,58 +98,43 @@
   </nav>
 </header>
 
-    <h1>Contactá con nosotros</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-      voluptate esse illum! Neque, praesentium. Perspiciatis, eligendi tempore.
-      Illo ab quam obcaecati dolor. Provident explicabo odit consequuntur qui
-      aperiam. Cum, odio.
-    </p>
-    <section id="contacto">
+    <h1 class="h1-contacto">Contactá con nosotros</h1>
+    <main class="main-contacto">
+      <section id="contacto">
+          <p>
+            ¡Nos encantaría saber de ti! Ponte en contacto con nosotros para
+            cualquier consulta, comentario o sugerencia.
+          </p>
+          <form action="enviar.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+          </form>
+        </section>
+     </main>
+     <footer>
       <p>
-        ¡Nos encantaría saber de ti! Ponte en contacto con nosotros para
-        cualquier consulta, comentario o sugerencia.
+        © 2024 FinanC. Todos los derechos reservados. Desarrollado por Mateo Molíns Larrabure.
       </p>
-      <form action="enviar.php" method="POST">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required />
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
-    <footer>
-      <p>
-        © 2024 FinanC. Todos los derechos reservados. Desarrollado por Mateo
-        Molíns Larrabure.
-      </p>
-      <h4>Seguinos en:</h4>
-      <a href="https://www.facebook.com/" target="_blank">
-        <img
-          class="footer-img"
-          src="../images/footer/facebook-logo.png"
-          alt="Redirección a Facebook"
-        />
-      </a>
-      <a href="https://www.instagram.com" target="_blank">
-        <img
-          class="footer-img"
-          src="../images/footer/instagram.png"
-          alt="Redirección a instagram"
-        />
-      </a>
-      <a href="https://twitter.com/" target="_blank">
-        <img
-          class="footer-img"
-          src="../images/footer/twitter-logo-logo.png"
-          alt="Redirección a twitter"
-        />
-      </a>
+      
+      <article>
+        <a href="https://www.facebook.com/" target="_blank">
+          <img class="footer-img" src="../images/footer/facebook-logo.png"alt="Redirección a Facebook">
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <img class="footer-img" src="../images/footer/instagram.png"alt="Redirección a instagram">
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <img class="footer-img" src="../images/footer/twitter-logo-logo.png" alt="Redirección a twitter">
+        </a>
+      </article> 
     </footer>
   </body>
 </html>

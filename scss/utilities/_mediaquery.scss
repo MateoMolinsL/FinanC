@@ -5,15 +5,15 @@
       display: grid;
       grid-column: 1/2;
       grid-row: 2/4;
-      align-content: center;
-      justify-content: center;
-      margin: 5px;
-      padding: 0;
-    }
+      align-content:center;
+      justify-content: baseline;
+      justify-self: left;
+      margin: 20px;
+      padding:0px;
+      }
     
     .item-grid-p-calculadora-principal {
       display: grid;
-  
       grid-column: 2/3;
       grid-row: 2/4;
       justify-content:baseline;
@@ -46,7 +46,7 @@
       align-content: center;
       justify-content: center;
       margin: 5px;
-      padding: 0;
+      padding: 0px;
     }
     
     .item-grid-p-calculadora-principal {
@@ -123,23 +123,30 @@
     }
   }
   
-  
+  //ESTILO PARA NOTICIA
+
+    .carousel-item img {
+    border-radius: 10px;
+    width: 100% !important;
+    height: 60vh !important;
+  }
+
   //ESTILO PARA EL BLOG
-  .main-blog{
-    background-color: antiquewhite;
-    display: grid;
-    grid-template-columns: 2;
-    grid-template-rows: 4;
-    justify-items: center;
-    column-gap: 5px;
-    row-gap: 5px;
-    margin: 5px;
-  }
+ // .main-blog{
+  //  background-color: antiquewhite;
+   // display: grid;
+   // grid-template-columns: 2;
+   // grid-template-rows: 4;
+   // justify-items: center;
+   // column-gap: 5px;
+   // row-gap: 5px;
+   // margin: 5px;
+ // }
   
-  .card{
-    display: grid;
-    justify-content: center;
-    margin: 5px;
-    grid-column: 1/3;
-  }
+ // .card{
+   // display: grid;
+   // justify-content: center;
+   // margin: 5px;
+   // grid-column: 1/3;
+  //}
   
